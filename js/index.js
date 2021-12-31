@@ -1,13 +1,18 @@
-let count = 0
+let count = document.getElementById('countEl');
 
-// if + btn is clicked increment by one the count element
-function increment() {
-    count += 1;
-    countEl.innerText = count;
-}
 
-// if - btn is clicked decrement by one the count element
+// get the minus div and implement a button to decrement count
+let minus = document.getElementById('minus');
 function decrement() {
-    count -= 1;
-    countEl.innerText = count;
+    count.innerHTML--;
 }
+
+minus.addEventListener('click', decrement);
+
+// get the plus div and implement a button to increment count
+let plus = document.getElementById('plus');
+function increment() {
+    count.innerHTML++;
+}
+
+plus.addEventListener('click', increment);
