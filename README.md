@@ -11,7 +11,6 @@ It's really easy: press the "+" button to increment the counter by 1 and the "-"
 - Javascript
 
 ## Link
-
-https://epic-wiles-879a44.netlify.app
+https://epic-newton-002082.netlify.app/
 
 
