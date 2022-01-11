@@ -1,18 +1,27 @@
-let count = document.getElementById('countEl');
+let counter = document.getElementById('counter');
 
+let minusBtn = document.createElement("button");
+minusBtn.innerHTML = "-";
+counter.appendChild(minusBtn);
+minusBtn = document.getElementsByTagName("button")[0];
 
-// get the minus div and implement a button to decrement count
-let minus = document.getElementById('minus');
+let count = document.createElement("h2");
+count.innerHTML = 0;
+counter.appendChild(count);
+count = document.querySelector("h2");
+
+let plusBtn = document.createElement("button");
+plusBtn.innerHTML = "+";
+counter.appendChild(plusBtn);
+plusBtn = document.getElementsByTagName("button")[1];
+
+minusBtn.addEventListener("click", decrement);
+plusBtn.addEventListener("click", increment);
+
 function decrement() {
     count.innerHTML--;
 }
 
-minus.addEventListener('click', decrement);
-
-// get the plus div and implement a button to increment count
-let plus = document.getElementById('plus');
 function increment() {
     count.innerHTML++;
 }
-
-plus.addEventListener('click', increment);

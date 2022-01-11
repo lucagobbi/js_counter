@@ -1,61 +1,66 @@
 body {
-    background: linear-gradient(to right, #82a7b6, #B1D0E0);
-    text-align: center;
+  background: linear-gradient(to right, #82a7b6, #b1d0e0);
+  text-align: center;
 }
 
 h1 {
-    font-family: 'Coming Soon', cursive;
-    font-size: 4rem;
-    font-weight: bold;
-    color: #1A374D;
+  font-family: "Coming Soon", cursive;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #1a374d;
 }
 
 .container {
-    background-color: #1A374D;
-    margin: 0 auto 5%;
-    width: 500px;
-    height: 500px;
-    border-radius: 10%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 5px 5px 30px 15px rgba(26,55,77,0.9);
+  background-color: #1a374d;
+  margin: 0 auto 5%;
+  width: 500px;
+  height: 500px;
+  border-radius: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 5px 5px 30px 15px rgba(26, 55, 77, 0.9);
 }
 
 h2 {
-    font-family: 'Coming Soon', cursive;
-    font-size: 5rem;
-    color: #c3d4dd;
+  font-family: "Coming Soon", cursive;
+  font-size: 5rem;
+  color: #c3d4dd;
+  cursor: pointer;
 }
 
-.container div {
-    font-size: 4rem;
-    font-family: 'Coming Soon', cursive;
-    font-weight: 700;
-    color: #c3d4dd;
-    cursor: pointer;
+button {
+  font-size: 4rem;
+  font-family: "Coming Soon", cursive;
+  font-weight: 700;
+  color: #c3d4dd;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-.container div:hover {
-    color: #7fa8b8;
-    transition: 0.5s ease-in-out;
+button:hover {
+  color: #7fa8b8;
+  transition: 0.5s ease-in-out;
 }
 
 footer {
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    color: #1A374D;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  color: #1a374d;
 }
 
 @media only screen and (max-width: 600px) {
-    
-    h1 {
-        font-size: 3rem;
-    }
+  h1 {
+    font-size: 3rem;
+  }
 
-    .container {
-        width: 80%;
-        height: 60%;
-    }
+  h2 {
+    font-size: 3rem;
+  }
+
+  .container {
+    width: 80%;
+    height: 60%;
+  }
 }
-    
